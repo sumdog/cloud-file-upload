@@ -1,5 +1,5 @@
-FROM ubuntu:15.04
-RUN apt-get install -y nano curl nginx imagemagick apache2-utils
+FROM ubuntu
+RUN apt-get update && apt-get install -y nano curl nginx imagemagick apache2-utils
 
 ENV NODE_VERSION 0.10.40
 ENV NPM_VERSION 2.14.1
